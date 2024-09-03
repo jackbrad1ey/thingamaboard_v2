@@ -1,0 +1,61 @@
+points:
+    rotate: -12
+    mirror:
+        ref: mainboard_inner_top
+        distance: 6cx
+    key:
+        padding: 19
+        spread: 19
+        width: 16.5
+        height: 16.5
+    zones:
+        mainboard:
+            columns:
+                outer:
+                    rows:
+                        thumbs:
+                            skip: true
+                pinkie:
+                    rows:
+                        thumbs:
+                            skip: true
+                    key:
+                        stagger: 2
+                ring:
+                    rows:
+                        thumbs:
+                            skip: true
+                    key:
+                        stagger: 2.5
+                middle:
+                    key:
+                        stagger: 2.5
+                pointer:
+                    key:
+                        stagger: -2.5
+                inner:
+                    key:
+                        stagger: 2
+                macros:
+                    rows:
+                        thumbs:
+                            skip: true
+                    key:
+                        stagger: 6
+            rows:
+                thumbs: null
+                bottom: null
+                home: null
+                top: null
+        thumb:
+            anchor:
+                ref: mainboard_inner_bottom
+                shift:
+                    - 28
+                    - -23
+            columns:
+                key_two:
+                    key:
+                        width: 1.5cx
+                        rotate: -15
+            rows: null
