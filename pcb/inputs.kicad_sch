@@ -420,6 +420,9 @@
   (junction (at 191.77 57.15) (diameter 0) (color 0 0 0 0)
     (uuid 69b67810-f5b2-4c07-9ba2-d4e054874316)
   )
+  (junction (at 140.97 71.12) (diameter 0) (color 0 0 0 0)
+    (uuid 6ac05fef-3820-4809-a0cc-309952d2a158)
+  )
   (junction (at 115.57 57.15) (diameter 0) (color 0 0 0 0)
     (uuid 6e00a697-c453-4d73-97b4-81925994694e)
   )
@@ -434,6 +437,9 @@
   )
   (junction (at 64.77 43.18) (diameter 0) (color 0 0 0 0)
     (uuid 739c4c37-1700-4130-88de-2fe7631237d4)
+  )
+  (junction (at 128.27 71.12) (diameter 0) (color 0 0 0 0)
+    (uuid 74deb99c-5a71-4e7c-976f-daa48c26d759)
   )
   (junction (at 156.21 76.2) (diameter 0) (color 0 0 0 0)
     (uuid 77b3f2a6-ac17-4b36-bd31-42d0f9f2a998)
@@ -476,6 +482,9 @@
   )
   (junction (at 128.27 57.15) (diameter 0) (color 0 0 0 0)
     (uuid a13c8c91-ba22-4413-b1e4-e9b6864e71a9)
+  )
+  (junction (at 118.11 90.17) (diameter 0) (color 0 0 0 0)
+    (uuid a1aa39b3-ef8f-495d-990d-67e82196c42d)
   )
   (junction (at 54.61 62.23) (diameter 0) (color 0 0 0 0)
     (uuid a7bd6d78-711f-4dab-bbeb-c41ad722562e)
@@ -542,6 +551,9 @@
   )
   (junction (at 194.31 48.26) (diameter 0) (color 0 0 0 0)
     (uuid e34353e2-6c2c-4816-8f90-4bee188bcf69)
+  )
+  (junction (at 130.81 90.17) (diameter 0) (color 0 0 0 0)
+    (uuid e77e228a-98f0-49d1-9e71-8d6bebf73160)
   )
   (junction (at 130.81 62.23) (diameter 0) (color 0 0 0 0)
     (uuid ea0b6f0b-d997-4d6e-95a0-e94c6eb9fd2c)
@@ -733,6 +745,10 @@
     (stroke (width 0) (type default))
     (uuid 4c4d48af-5ac0-44bd-8e9a-4f7792aff2f5)
   )
+  (wire (pts (xy 128.27 71.12) (xy 128.27 85.09))
+    (stroke (width 0) (type default))
+    (uuid 50f5f365-48d0-48b5-821f-6809be559342)
+  )
   (wire (pts (xy 179.07 71.12) (xy 179.07 85.09))
     (stroke (width 0) (type default))
     (uuid 51ba7d67-5595-4935-9d46-98b39b3c5451)
@@ -804,6 +820,10 @@
   (wire (pts (xy 62.23 29.21) (xy 64.77 29.21))
     (stroke (width 0) (type default))
     (uuid 74fcd6c2-34b9-4069-a9be-7884e83f60b1)
+  )
+  (wire (pts (xy 130.81 90.17) (xy 143.51 90.17))
+    (stroke (width 0) (type default))
+    (uuid 76ceefa3-41bc-4ecd-bfa0-91ab99952b1c)
   )
   (wire (pts (xy 194.31 48.26) (xy 207.01 48.26))
     (stroke (width 0) (type default))
@@ -961,6 +981,10 @@
     (stroke (width 0) (type default))
     (uuid cf4d1ab5-d8fd-46cd-875e-ab51a2b529dc)
   )
+  (wire (pts (xy 118.11 90.17) (xy 130.81 90.17))
+    (stroke (width 0) (type default))
+    (uuid d14f9e2b-a625-4658-860d-53f634db9b13)
+  )
   (wire (pts (xy 118.11 76.2) (xy 130.81 76.2))
     (stroke (width 0) (type default))
     (uuid d47219ac-6ebf-4161-a118-9da789d21b75)
@@ -976,6 +1000,10 @@
   (wire (pts (xy 156.21 48.26) (xy 168.91 48.26))
     (stroke (width 0) (type default))
     (uuid dc513065-0a63-49dc-a0ea-e83c8a76a0b7)
+  )
+  (wire (pts (xy 140.97 71.12) (xy 140.97 85.09))
+    (stroke (width 0) (type default))
+    (uuid deb639fc-0272-4e08-bf6f-a125a7b94d27)
   )
   (wire (pts (xy 41.91 48.26) (xy 34.29 48.26))
     (stroke (width 0) (type default))
@@ -1049,7 +1077,7 @@
     (stroke (width 0) (type default))
     (uuid f9790662-b11c-4a10-bea6-296efb6ab271)
   )
-  (wire (pts (xy 105.41 90.17) (xy 143.51 90.17))
+  (wire (pts (xy 105.41 90.17) (xy 118.11 90.17))
     (stroke (width 0) (type default))
     (uuid f9be8c37-b08a-474e-9629-a5e800286fc7)
   )
@@ -1233,7 +1261,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW36") (unit 1)
+          (reference "SW38") (unit 1)
         )
       )
     )
@@ -1262,7 +1290,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW32") (unit 1)
+          (reference "SW34") (unit 1)
         )
       )
     )
@@ -1271,7 +1299,7 @@
   (symbol (lib_id "Device:D_Small") (at 168.91 87.63 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 16fdad51-ceac-46cf-ad39-97bb89f922a2)
-    (property "Reference" "D40" (at 171.45 86.995 90)
+    (property "Reference" "D42" (at 171.45 86.995 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 171.45 88.9 90)
@@ -1297,7 +1325,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D40") (unit 1)
+          (reference "D42") (unit 1)
         )
       )
     )
@@ -1333,6 +1361,41 @@
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
           (reference "D16") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:D_Small") (at 118.11 87.63 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 211868f2-bf41-4b9e-99b1-d09e4e86f7b0)
+    (property "Reference" "D26" (at 120.65 86.995 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "D_Small" (at 120.65 88.9 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 118.11 87.63 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 118.11 87.63 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 118.11 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 118.11 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C2099" (at 118.11 87.63 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid dced1b8a-0970-4cb3-bab7-c2812858bb00))
+    (pin "2" (uuid 4f64e956-d4da-4452-9f1e-c4eb7aa84419))
+    (instances
+      (project "keyboard"
+        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
+          (reference "D26") (unit 1)
         )
       )
     )
@@ -1396,7 +1459,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW38") (unit 1)
+          (reference "SW40") (unit 1)
         )
       )
     )
@@ -1469,7 +1532,7 @@
   (symbol (lib_id "Device:D_Small") (at 130.81 59.69 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2c0fd967-0bcb-4411-bb79-96da3eaa064f)
-    (property "Reference" "D27" (at 133.35 59.055 90)
+    (property "Reference" "D28" (at 133.35 59.055 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 133.35 60.96 90)
@@ -1495,7 +1558,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D27") (unit 1)
+          (reference "D28") (unit 1)
         )
       )
     )
@@ -1646,7 +1709,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW30") (unit 1)
+          (reference "SW32") (unit 1)
         )
       )
     )
@@ -1655,7 +1718,7 @@
   (symbol (lib_id "Device:D_Small") (at 207.01 73.66 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2e870807-1ba8-4dee-9b30-53f06aa00a3b)
-    (property "Reference" "D49" (at 209.55 73.025 90)
+    (property "Reference" "D51" (at 209.55 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 209.55 74.93 90)
@@ -1681,7 +1744,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D49") (unit 1)
+          (reference "D51") (unit 1)
         )
       )
     )
@@ -1739,7 +1802,71 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW39") (unit 1)
+          (reference "SW41") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 123.19 85.09 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 315c3731-6aec-489d-9716-dd4c64974124)
+    (property "Reference" "SW1" (at 123.19 78.74 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 123.19 81.28 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "local-library:SW_PG1350" (at 123.19 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 123.19 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid effea25c-3da2-430d-bcbb-85d3d0adf2d4))
+    (pin "2" (uuid aa4e580b-db53-4b89-b46b-91f43bcd9c00))
+    (instances
+      (project "keyboard"
+        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199"
+          (reference "SW1") (unit 1)
+        )
+        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
+          (reference "SW25") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:D_Small") (at 130.81 87.63 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 32ddf0c1-7e26-4e0e-8698-3bcf6427ff7c)
+    (property "Reference" "D30" (at 133.35 86.995 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "D_Small" (at 133.35 88.9 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 130.81 87.63 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 130.81 87.63 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 130.81 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 130.81 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C2099" (at 130.81 87.63 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1cd5dba4-f3c0-4bcc-97ba-9232f2787e76))
+    (pin "2" (uuid c912cadc-e99e-4d4b-9de9-3adf4ea2ee56))
+    (instances
+      (project "keyboard"
+        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
+          (reference "D30") (unit 1)
         )
       )
     )
@@ -1768,7 +1895,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW46") (unit 1)
+          (reference "SW48") (unit 1)
         )
       )
     )
@@ -1806,7 +1933,7 @@
   (symbol (lib_id "Device:D_Small") (at 181.61 73.66 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3a0686fc-96fc-4e5a-aeac-71d7496a4a40)
-    (property "Reference" "D43" (at 184.15 73.025 90)
+    (property "Reference" "D45" (at 184.15 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 184.15 74.93 90)
@@ -1832,7 +1959,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D43") (unit 1)
+          (reference "D45") (unit 1)
         )
       )
     )
@@ -1876,7 +2003,7 @@
   (symbol (lib_id "Device:D_Small") (at 207.01 45.72 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3ade2586-4433-4f0c-afd4-d5f498329c72)
-    (property "Reference" "D47" (at 209.55 45.085 90)
+    (property "Reference" "D49" (at 209.55 45.085 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 209.55 46.99 90)
@@ -1902,7 +2029,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D47") (unit 1)
+          (reference "D49") (unit 1)
         )
       )
     )
@@ -2071,7 +2198,7 @@
   (symbol (lib_id "Device:D_Small") (at 194.31 59.69 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4a017f89-e85d-4c74-a448-e1a6544803af)
-    (property "Reference" "D45" (at 196.85 59.055 90)
+    (property "Reference" "D47" (at 196.85 59.055 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 196.85 60.96 90)
@@ -2097,7 +2224,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D45") (unit 1)
+          (reference "D47") (unit 1)
         )
       )
     )
@@ -2106,7 +2233,7 @@
   (symbol (lib_id "Device:D_Small") (at 168.91 45.72 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4a6db0ba-1860-4e81-a310-720bdbe431cb)
-    (property "Reference" "D37" (at 171.45 45.085 90)
+    (property "Reference" "D39" (at 171.45 45.085 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 171.45 46.99 90)
@@ -2132,7 +2259,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D37") (unit 1)
+          (reference "D39") (unit 1)
         )
       )
     )
@@ -2190,7 +2317,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW40") (unit 1)
+          (reference "SW42") (unit 1)
         )
       )
     )
@@ -2341,7 +2468,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW42") (unit 1)
+          (reference "SW44") (unit 1)
         )
       )
     )
@@ -2350,7 +2477,7 @@
   (symbol (lib_id "power:GND") (at 30.48 133.35 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 65470fcf-1d22-4882-adce-e36a6f8dd859)
-    (property "Reference" "#PWR022" (at 30.48 139.7 0)
+    (property "Reference" "#PWR010" (at 30.48 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 30.48 138.43 0)
@@ -2366,7 +2493,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -2375,7 +2502,7 @@
   (symbol (lib_id "Device:D_Small") (at 143.51 59.69 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6a1efe42-b6bc-406f-8bb0-eb33bcc6b3e4)
-    (property "Reference" "D30" (at 146.05 59.055 90)
+    (property "Reference" "D32" (at 146.05 59.055 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 146.05 60.96 90)
@@ -2401,7 +2528,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D30") (unit 1)
+          (reference "D32") (unit 1)
         )
       )
     )
@@ -2430,7 +2557,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW44") (unit 1)
+          (reference "SW46") (unit 1)
         )
       )
     )
@@ -2459,7 +2586,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW45") (unit 1)
+          (reference "SW47") (unit 1)
         )
       )
     )
@@ -2503,7 +2630,7 @@
   (symbol (lib_id "Device:D_Small") (at 194.31 73.66 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6e8dfd55-dd72-47a8-aab1-2e3c144abdab)
-    (property "Reference" "D46" (at 196.85 73.025 90)
+    (property "Reference" "D48" (at 196.85 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 196.85 74.93 90)
@@ -2529,7 +2656,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D46") (unit 1)
+          (reference "D48") (unit 1)
         )
       )
     )
@@ -2538,7 +2665,7 @@
   (symbol (lib_id "Device:D_Small") (at 143.51 45.72 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6f35e27d-4226-4dff-9082-abfacb033754)
-    (property "Reference" "D29" (at 146.05 45.085 90)
+    (property "Reference" "D31" (at 146.05 45.085 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 146.05 46.99 90)
@@ -2564,7 +2691,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D29") (unit 1)
+          (reference "D31") (unit 1)
         )
       )
     )
@@ -2593,7 +2720,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW33") (unit 1)
+          (reference "SW35") (unit 1)
         )
       )
     )
@@ -2637,7 +2764,7 @@
   (symbol (lib_id "Device:D_Small") (at 181.61 59.69 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 770c60d8-127b-45c7-bf29-049142dd2323)
-    (property "Reference" "D42" (at 184.15 59.055 90)
+    (property "Reference" "D44" (at 184.15 59.055 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 184.15 60.96 90)
@@ -2663,7 +2790,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D42") (unit 1)
+          (reference "D44") (unit 1)
         )
       )
     )
@@ -2692,7 +2819,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW48") (unit 1)
+          (reference "SW50") (unit 1)
         )
       )
     )
@@ -2760,7 +2887,7 @@
   (symbol (lib_id "Device:D_Small") (at 156.21 45.72 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 83a40b09-55cf-42b2-9a8e-8c3a34b9e6e0)
-    (property "Reference" "D33" (at 158.75 45.085 90)
+    (property "Reference" "D35" (at 158.75 45.085 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 158.75 46.99 90)
@@ -2786,7 +2913,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D33") (unit 1)
+          (reference "D35") (unit 1)
         )
       )
     )
@@ -2795,7 +2922,7 @@
   (symbol (lib_id "Device:D_Small") (at 168.91 73.66 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 89125e37-cf7f-42ef-8fd6-4af5f34d6e0f)
-    (property "Reference" "D39" (at 171.45 73.025 90)
+    (property "Reference" "D41" (at 171.45 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 171.45 74.93 90)
@@ -2821,7 +2948,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D39") (unit 1)
+          (reference "D41") (unit 1)
         )
       )
     )
@@ -2850,7 +2977,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW26") (unit 1)
+          (reference "SW27") (unit 1)
         )
       )
     )
@@ -2943,7 +3070,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW35") (unit 1)
+          (reference "SW37") (unit 1)
         )
       )
     )
@@ -2972,7 +3099,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW28") (unit 1)
+          (reference "SW30") (unit 1)
         )
       )
     )
@@ -3010,7 +3137,7 @@
   (symbol (lib_id "power:GND") (at 63.5 147.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 997386e4-c6f3-4dfa-82c6-a7b2d18d55b2)
-    (property "Reference" "#PWR023" (at 63.5 153.67 0)
+    (property "Reference" "#PWR022" (at 63.5 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 63.5 152.4 0)
@@ -3026,7 +3153,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -3035,7 +3162,7 @@
   (symbol (lib_id "Device:D_Small") (at 143.51 87.63 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9ade1139-6fac-454f-aeb3-b2c472841370)
-    (property "Reference" "D32" (at 146.05 86.995 90)
+    (property "Reference" "D34" (at 146.05 86.995 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 146.05 88.9 90)
@@ -3061,7 +3188,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D32") (unit 1)
+          (reference "D34") (unit 1)
         )
       )
     )
@@ -3169,7 +3296,7 @@
   (symbol (lib_id "Device:D_Small") (at 130.81 73.66 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a32913b4-757b-4ec5-8ca8-ffeeb04071b8)
-    (property "Reference" "D28" (at 133.35 73.025 90)
+    (property "Reference" "D29" (at 133.35 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 133.35 74.93 90)
@@ -3195,7 +3322,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D28") (unit 1)
+          (reference "D29") (unit 1)
         )
       )
     )
@@ -3204,7 +3331,7 @@
   (symbol (lib_id "Device:D_Small") (at 143.51 73.66 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a750adb4-0a51-4177-9d1f-277085bc13c5)
-    (property "Reference" "D31" (at 146.05 73.025 90)
+    (property "Reference" "D33" (at 146.05 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 146.05 74.93 90)
@@ -3230,7 +3357,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D31") (unit 1)
+          (reference "D33") (unit 1)
         )
       )
     )
@@ -3259,7 +3386,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW34") (unit 1)
+          (reference "SW36") (unit 1)
         )
       )
     )
@@ -3300,6 +3427,35 @@
     )
   )
 
+  (symbol (lib_id "Switch:SW_Push") (at 135.89 85.09 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid abb96a16-a43f-4f88-a1cd-692b16692945)
+    (property "Reference" "SW1" (at 135.89 78.74 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 135.89 81.28 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "local-library:SW_PG1350" (at 135.89 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 135.89 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5eb97361-0071-4fa4-a096-b249f2f4dc08))
+    (pin "2" (uuid 51905b23-ff75-4053-aa25-b63d8a5de930))
+    (instances
+      (project "keyboard"
+        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199"
+          (reference "SW1") (unit 1)
+        )
+        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
+          (reference "SW29") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Switch:SW_Push") (at 85.09 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ae3df60d-364f-4888-baf2-9f694531b595)
@@ -3332,7 +3488,7 @@
   (symbol (lib_id "Device:D_Small") (at 168.91 59.69 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b050f244-e167-4f15-935a-c66933876f5d)
-    (property "Reference" "D38" (at 171.45 59.055 90)
+    (property "Reference" "D40" (at 171.45 59.055 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 171.45 60.96 90)
@@ -3358,7 +3514,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D38") (unit 1)
+          (reference "D40") (unit 1)
         )
       )
     )
@@ -3367,7 +3523,7 @@
   (symbol (lib_id "Device:D_Small") (at 156.21 87.63 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b0c69b1e-c38c-41ea-8b8b-07716800d8bb)
-    (property "Reference" "D36" (at 158.75 86.995 90)
+    (property "Reference" "D38" (at 158.75 86.995 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 158.75 88.9 90)
@@ -3393,7 +3549,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D36") (unit 1)
+          (reference "D38") (unit 1)
         )
       )
     )
@@ -3422,7 +3578,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW29") (unit 1)
+          (reference "SW31") (unit 1)
         )
       )
     )
@@ -3451,7 +3607,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW37") (unit 1)
+          (reference "SW39") (unit 1)
         )
       )
     )
@@ -3631,7 +3787,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW43") (unit 1)
+          (reference "SW45") (unit 1)
         )
       )
     )
@@ -3695,7 +3851,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW31") (unit 1)
+          (reference "SW33") (unit 1)
         )
       )
     )
@@ -3733,7 +3889,7 @@
   (symbol (lib_id "Device:D_Small") (at 207.01 59.69 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c59432a3-a967-493f-9e27-d5772338ca5f)
-    (property "Reference" "D48" (at 209.55 59.055 90)
+    (property "Reference" "D50" (at 209.55 59.055 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 209.55 60.96 90)
@@ -3759,7 +3915,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D48") (unit 1)
+          (reference "D50") (unit 1)
         )
       )
     )
@@ -3832,7 +3988,7 @@
   (symbol (lib_id "Device:D_Small") (at 181.61 45.72 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cceaa8ea-668f-4aff-a65c-ea946dce524c)
-    (property "Reference" "D41" (at 184.15 45.085 90)
+    (property "Reference" "D43" (at 184.15 45.085 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 184.15 46.99 90)
@@ -3858,7 +4014,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D41") (unit 1)
+          (reference "D43") (unit 1)
         )
       )
     )
@@ -3957,7 +4113,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW27") (unit 1)
+          (reference "SW28") (unit 1)
         )
       )
     )
@@ -3966,7 +4122,7 @@
   (symbol (lib_id "Device:D_Small") (at 156.21 73.66 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e2f612c1-7b85-438d-8e47-63789c5c95c1)
-    (property "Reference" "D35" (at 158.75 73.025 90)
+    (property "Reference" "D37" (at 158.75 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 158.75 74.93 90)
@@ -3992,7 +4148,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D35") (unit 1)
+          (reference "D37") (unit 1)
         )
       )
     )
@@ -4030,7 +4186,7 @@
   (symbol (lib_id "Device:D_Small") (at 194.31 45.72 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e49a4062-984a-4209-904f-061c3213394a)
-    (property "Reference" "D44" (at 196.85 45.085 90)
+    (property "Reference" "D46" (at 196.85 45.085 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 196.85 46.99 90)
@@ -4056,7 +4212,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D44") (unit 1)
+          (reference "D46") (unit 1)
         )
       )
     )
@@ -4100,7 +4256,7 @@
   (symbol (lib_id "Device:D_Small") (at 130.81 45.72 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e983b16c-88f6-4dc9-9c5a-9879a5048036)
-    (property "Reference" "D26" (at 133.35 45.085 90)
+    (property "Reference" "D27" (at 133.35 45.085 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 133.35 46.99 90)
@@ -4126,7 +4282,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D26") (unit 1)
+          (reference "D27") (unit 1)
         )
       )
     )
@@ -4190,7 +4346,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW25") (unit 1)
+          (reference "SW26") (unit 1)
         )
       )
     )
@@ -4199,7 +4355,7 @@
   (symbol (lib_id "Device:D_Small") (at 156.21 59.69 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ef21ebbb-a780-47fc-9405-2198388b74d7)
-    (property "Reference" "D34" (at 158.75 59.055 90)
+    (property "Reference" "D36" (at 158.75 59.055 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Small" (at 158.75 60.96 90)
@@ -4225,7 +4381,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "D34") (unit 1)
+          (reference "D36") (unit 1)
         )
       )
     )
@@ -4254,7 +4410,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW47") (unit 1)
+          (reference "SW49") (unit 1)
         )
       )
     )
@@ -4373,7 +4529,7 @@
           (reference "SW1") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "SW41") (unit 1)
+          (reference "SW43") (unit 1)
         )
       )
     )
@@ -4417,7 +4573,7 @@
   (symbol (lib_id "power:+3V3") (at 44.45 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fb0b3c6d-32b5-409e-aefc-ade4118e683c)
-    (property "Reference" "#PWR024" (at 44.45 125.73 0)
+    (property "Reference" "#PWR011" (at 44.45 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 44.45 118.11 0)
@@ -4433,7 +4589,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/1c8ac5bd-b3bc-4835-a71b-e635010cd696"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
