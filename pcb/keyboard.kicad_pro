@@ -947,6 +947,10 @@
     [
       "1c8ac5bd-b3bc-4835-a71b-e635010cd696",
       "inputs"
+    ],
+    [
+      "010e79f9-e3f4-42f4-9458-dc603332dc57",
+      "MCU"
     ]
   ],
   "text_variables": {}
