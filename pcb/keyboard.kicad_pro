@@ -947,10 +947,6 @@
     [
       "1c8ac5bd-b3bc-4835-a71b-e635010cd696",
       "inputs"
-    ],
-    [
-      "64ee9d5d-ab82-4e0c-9832-d79f45631cea",
-      "stm32"
     ]
   ],
   "text_variables": {}
