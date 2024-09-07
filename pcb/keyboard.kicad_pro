@@ -411,7 +411,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.13,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -465,7 +465,7 @@
         "clearance": 0.2,
         "diff_pair_gap": 0.15,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.76,
+        "diff_pair_width": 1.0,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -810,14 +810,14 @@
       },
       {
         "netclass": "USB Data",
-        "pattern": "/connectors/USB_D-"
+        "pattern": "/MCU/USB_D-"
       },
       {
         "netclass": "USB Data",
-        "pattern": "/connectors/USB_D+"
+        "pattern": "/MCU/USB_D+"
       },
       {
-        "netclass": "Power",
+        "netclass": "Default",
         "pattern": "+3.3V"
       },
       {
