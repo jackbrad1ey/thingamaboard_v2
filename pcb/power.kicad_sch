@@ -5,11 +5,11 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+    (symbol "Device:C_Polarized" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "C" (at 0.635 2.54 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Value" "C" (at 0.635 -2.54 0)
+      (property "Value" "C_Polarized" (at 0.635 -2.54 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
       (property "Footprint" "" (at 0.9652 -3.81 0)
@@ -21,31 +21,39 @@
       (property "ki_keywords" "cap capacitor" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Unpolarized capacitor" (at 0 0 0)
+      (property "ki_description" "Polarized capacitor" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "C_*" (at 0 0 0)
+      (property "ki_fp_filters" "CP_*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "C_0_1"
-        (polyline
-          (pts
-            (xy -2.032 -0.762)
-            (xy 2.032 -0.762)
-          )
-          (stroke (width 0.508) (type default))
+      (symbol "C_Polarized_0_1"
+        (rectangle (start -2.286 0.508) (end 2.286 1.016)
+          (stroke (width 0) (type default))
           (fill (type none))
         )
         (polyline
           (pts
-            (xy -2.032 0.762)
-            (xy 2.032 0.762)
+            (xy -1.778 2.286)
+            (xy -0.762 2.286)
           )
-          (stroke (width 0.508) (type default))
+          (stroke (width 0) (type default))
           (fill (type none))
         )
+        (polyline
+          (pts
+            (xy -1.27 2.794)
+            (xy -1.27 1.778)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 2.286 -0.508) (end -2.286 -1.016)
+          (stroke (width 0) (type default))
+          (fill (type outline))
+        )
       )
-      (symbol "C_1_1"
+      (symbol "C_Polarized_1_1"
         (pin passive line (at 0 3.81 270) (length 2.794)
           (name "~" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -475,6 +483,58 @@
     (uuid c3ff3f11-dcc2-4e67-8d99-a0341cdd20bf)
   )
 
+  (symbol (lib_id "Device:C_Polarized") (at 116.84 87.63 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 18b7d166-92bc-43e9-b1fe-0d3ec89f063a)
+    (property "Reference" "C16" (at 120.65 86.106 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10u" (at 120.65 88.646 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 117.8052 91.44 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.lcsc.com/product-detail/Tantalum-Capacitors_Kyocera-AVX-TAJA106K016RNJ_C7171.html" (at 116.84 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f594ccbc-cc1e-46e4-bbe3-3fce9c405e85))
+    (pin "2" (uuid 47c2b1cc-29ba-4c3f-818e-a39e849fb817))
+    (instances
+      (project "keyboard"
+        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/55896886-29a1-46d7-b475-726a72adff13"
+          (reference "C16") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C_Polarized") (at 91.44 87.63 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 2a3a6b4c-1e74-40fe-b9f6-928cf15b4b63)
+    (property "Reference" "C1" (at 95.25 86.106 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10u" (at 95.25 88.646 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 92.4052 91.44 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.lcsc.com/product-detail/Tantalum-Capacitors_Kyocera-AVX-TAJA106K016RNJ_C7171.html" (at 91.44 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f8159f5c-e4a3-4075-99cd-cbe7e856d302))
+    (pin "2" (uuid 697cc820-caed-45cf-968d-4c8ba7338371))
+    (instances
+      (project "keyboard"
+        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/55896886-29a1-46d7-b475-726a72adff13"
+          (reference "C1") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:+3V3") (at 119.38 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3c3d6b73-7aaa-4b75-bbdd-6146cfc1df7b)
@@ -495,32 +555,6 @@
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/55896886-29a1-46d7-b475-726a72adff13"
           (reference "#PWR03") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 116.84 87.63 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 458a98bb-f3a5-447c-8e54-625b8c790341)
-    (property "Reference" "C2" (at 120.65 86.995 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "10u" (at 120.65 89.535 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 117.8052 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 116.84 87.63 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4d99876c-bfba-48cb-82fe-3c96f4270487))
-    (pin "2" (uuid 418defe6-c910-45b9-a8b1-beec3d80d2b5))
-    (instances
-      (project "keyboard"
-        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/55896886-29a1-46d7-b475-726a72adff13"
-          (reference "C2") (unit 1)
         )
       )
     )
@@ -555,7 +589,7 @@
   (symbol (lib_id "power:GND") (at 104.14 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 564e71e6-6606-4fd9-829c-0df1f499bf3e)
-    (property "Reference" "#PWR01" (at 104.14 100.33 0)
+    (property "Reference" "#PWR02" (at 104.14 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 104.14 99.06 0)
@@ -571,7 +605,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/55896886-29a1-46d7-b475-726a72adff13"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -579,25 +613,25 @@
 
   (symbol (lib_id "Device:R") (at 144.78 82.55 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 5aa55dda-dc4f-473b-ba52-8f19a2c65c9e)
-    (property "Reference" "R6" (at 144.78 77.47 90)
+    (uuid 57f8ed71-0de8-4df0-8a32-ed032c2601d7)
+    (property "Reference" "R12" (at 144.78 77.47 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "27" (at 144.78 80.01 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 144.78 84.328 90)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 144.78 84.328 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 144.78 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9061b450-46f9-47e6-bf6c-6df9657f804e))
-    (pin "2" (uuid e625277d-a00e-48bc-b985-b89e698dd7e9))
+    (pin "1" (uuid 44f705c3-258d-4842-b4b8-43a9f27b12b4))
+    (pin "2" (uuid 00ba4286-93f1-4a5f-9b67-71302780a213))
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/010e79f9-e3f4-42f4-9458-dc603332dc57"
-          (reference "R6") (unit 1)
+          (reference "R12") (unit 1)
         )
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/55896886-29a1-46d7-b475-726a72adff13"
           (reference "R1") (unit 1)
@@ -609,7 +643,7 @@
   (symbol (lib_id "power:+3V3") (at 138.43 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5ebc9435-0552-44b4-a48f-f4fe0aeee72a)
-    (property "Reference" "#PWR026" (at 138.43 85.09 0)
+    (property "Reference" "#PWR023" (at 138.43 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 138.43 77.47 0)
@@ -625,7 +659,36 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/55896886-29a1-46d7-b475-726a72adff13"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR023") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 152.4 82.55 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 6bba348a-bf60-4d51-b81e-fefd7259c009)
+    (property "Reference" "R12" (at 152.4 77.47 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "27" (at 152.4 80.01 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 152.4 84.328 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 152.4 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 2c91a40b-d80a-4e01-8877-6add6608d9a8))
+    (pin "2" (uuid 5374a42f-e9b2-4539-91b1-4a773a4a1d94))
+    (instances
+      (project "keyboard"
+        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/010e79f9-e3f4-42f4-9458-dc603332dc57"
+          (reference "R12") (unit 1)
+        )
+        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/55896886-29a1-46d7-b475-726a72adff13"
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -658,10 +721,39 @@
     )
   )
 
+  (symbol (lib_id "Device:R") (at 160.02 82.55 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid b298ef5d-45ae-49d2-b5ce-5f4de8682251)
+    (property "Reference" "R12" (at 160.02 77.47 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "27" (at 160.02 80.01 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 160.02 84.328 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 160.02 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 746417f5-94b3-499d-8cf6-01d522afac6b))
+    (pin "2" (uuid d63b5a8a-d786-4d0b-8b74-26887ab96087))
+    (instances
+      (project "keyboard"
+        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/010e79f9-e3f4-42f4-9458-dc603332dc57"
+          (reference "R12") (unit 1)
+        )
+        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/55896886-29a1-46d7-b475-726a72adff13"
+          (reference "R3") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:VBUS") (at 88.9 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d4666a02-e3ae-43fc-b578-a3d69e3aa3ef)
-    (property "Reference" "#PWR02" (at 88.9 85.09 0)
+    (property "Reference" "#PWR01" (at 88.9 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 88.9 77.47 0)
@@ -677,62 +769,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/55896886-29a1-46d7-b475-726a72adff13"
-          (reference "#PWR02") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 91.44 87.63 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid df521349-2e95-48d2-8dea-f4d5d7ef6898)
-    (property "Reference" "C1" (at 95.25 86.995 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "10u" (at 95.25 89.535 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 92.4052 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 91.44 87.63 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f5fd88b1-2c77-4b9c-8bf4-4e83f5a3819b))
-    (pin "2" (uuid 35d24873-20f4-4c30-a86f-991aa4de000b))
-    (instances
-      (project "keyboard"
-        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/55896886-29a1-46d7-b475-726a72adff13"
-          (reference "C1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 160.02 82.55 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid e3cf8921-b545-41e3-9f86-539a9788d405)
-    (property "Reference" "R6" (at 160.02 77.47 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "27" (at 160.02 80.01 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 160.02 84.328 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 160.02 82.55 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ed592f91-157e-40d9-b0f1-0eecd2676d3a))
-    (pin "2" (uuid 387d91c4-d87b-468b-9dfd-a22051bf8322))
-    (instances
-      (project "keyboard"
-        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/010e79f9-e3f4-42f4-9458-dc603332dc57"
-          (reference "R6") (unit 1)
-        )
-        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/55896886-29a1-46d7-b475-726a72adff13"
-          (reference "R3") (unit 1)
+          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -741,7 +778,7 @@
   (symbol (lib_id "power:GND") (at 173.99 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fc537096-eaf1-4ee4-80df-40a4e450cb27)
-    (property "Reference" "#PWR025" (at 173.99 90.17 0)
+    (property "Reference" "#PWR024" (at 173.99 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 173.99 88.9 0)
@@ -757,36 +794,7 @@
     (instances
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/55896886-29a1-46d7-b475-726a72adff13"
-          (reference "#PWR025") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 152.4 82.55 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid fd41eef0-9d82-4f30-be34-d84246ba9455)
-    (property "Reference" "R6" (at 152.4 77.47 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "27" (at 152.4 80.01 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 152.4 84.328 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 152.4 82.55 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6b3a251a-5462-40b9-9b47-cab9e7c86018))
-    (pin "2" (uuid e9b86b55-f3bf-4a34-9412-bab3a507c0bf))
-    (instances
-      (project "keyboard"
-        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/010e79f9-e3f4-42f4-9458-dc603332dc57"
-          (reference "R6") (unit 1)
-        )
-        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/55896886-29a1-46d7-b475-726a72adff13"
-          (reference "R2") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
     )
