@@ -705,7 +705,6 @@
   )
 
   (no_connect (at 55.88 62.23) (uuid 21bbdabd-1468-4744-bbdb-9abda9dcd63c))
-  (no_connect (at 33.02 72.39) (uuid 78a99386-5e7f-4d1f-bafa-b86589a3fb52))
   (no_connect (at 55.88 64.77) (uuid 79399c1c-becc-4aef-b150-996421c40ad9))
 
   (wire (pts (xy 55.88 54.61) (xy 57.15 54.61))
@@ -751,6 +750,10 @@
   (wire (pts (xy 60.96 40.64) (xy 60.96 48.26))
     (stroke (width 0) (type default))
     (uuid 496bcfeb-b0da-4ab5-9fb6-eaefe2d0cb8d)
+  )
+  (wire (pts (xy 33.02 72.39) (xy 33.02 73.66))
+    (stroke (width 0) (type default))
+    (uuid 4b6a22a2-cd0d-4e7e-9af6-c07bb34199cb)
   )
   (wire (pts (xy 60.96 67.31) (xy 60.96 68.58))
     (stroke (width 0) (type default))
@@ -909,10 +912,6 @@
     (effects (font (size 0.6 0.6)) (justify left bottom))
     (uuid 0040418f-8747-4a56-b2a6-3a98d09dd52d)
   )
-  (text "Ground loop moment" (at 29.21 74.93 0)
-    (effects (font (size 0.4 0.4)) (justify left bottom))
-    (uuid 1648a530-b12b-4ba4-93be-6389433239a6)
-  )
   (text "Try make these 10k resistors\ntoleranced +-5% or lower"
     (at 68.58 68.58 0)
     (effects (font (size 0.6 0.6)) (justify left bottom))
@@ -1019,6 +1018,31 @@
       (project "keyboard"
         (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/953c467c-8c0d-4158-80e9-7f51ef1515ee"
           (reference "U2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 33.02 73.66 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 1aaee589-3894-447d-ad17-bebc34d7a874)
+    (property "Reference" "#PWR026" (at 33.02 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 33.02 78.74 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 33.02 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 33.02 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 40afcd30-90ba-4348-ab7b-ebc0a1910a9f))
+    (instances
+      (project "keyboard"
+        (path "/fc529d87-72d0-4c92-b352-ddcf4c6f7199/953c467c-8c0d-4158-80e9-7f51ef1515ee"
+          (reference "#PWR026") (unit 1)
         )
       )
     )
