@@ -16,7 +16,7 @@ use embassy_rp::usb::{Driver, InterruptHandler};
 use embassy_usb::class::hid::{HidReaderWriter, ReportId, RequestHandler, State};
 use embassy_usb::control::OutResponse;
 use embassy_usb::{Builder, Config, Handler};
-use embassy_time::{Duration, Ticker, Delay};
+use embassy_time::{Duration, Timer};
 use embassy_futures::join::join;
 
 use usbd_hid::descriptor::{KeyboardReport, SerializedDescriptor};
@@ -85,11 +85,13 @@ async fn main(_spawner: Spawner) {
 
     let (reader, mut writer) = hid.split();
 
-    let mut ticker = Ticker::every(Duration::from_millis(2000));
+    let mut keycode = 1;
     let main_loop = async {
         loop {
+            _ = Timer::after_secs(2).await;
+
             let report = KeyboardReport {
-                keycodes: [4, 0, 0, 0, 0, 0],
+                keycodes: [keycode, 0, 0, 0, 0, 0],
                 leds: 0,
                 modifier: 0,
                 reserved: 0,
@@ -100,8 +102,21 @@ async fn main(_spawner: Spawner) {
                 Err(e) => warn!("Failed to send report: {:?}", e),
             };
 
-            ticker.next().await;
+            _ = Timer::after_millis(10).await;
 
+            let report = KeyboardReport {
+                keycodes: [0, 0, 0, 0, 0, 0],
+                leds: 0,
+                modifier: 0,
+                reserved: 0,
+            };
+
+            match writer.write_serialize(&report).await {
+                Ok(()) => {}
+                Err(e) => warn!("Failed to send report: {:?}", e),
+            };
+
+            keycode += 1;
         }
     };
 
