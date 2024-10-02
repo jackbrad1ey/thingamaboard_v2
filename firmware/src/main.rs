@@ -3,8 +3,8 @@
 
 mod key_codes;
 mod key_layers;
+mod key_scan;
 
-use cortex_m::prelude::_embedded_hal_blocking_delay_DelayMs;
 use defmt::*;
 use core::sync::atomic::{AtomicBool, Ordering};
 
@@ -26,6 +26,7 @@ use {defmt_rtt as _, panic_probe as _};
 
 const NUM_COLS: usize = 14;
 const NUM_ROWS: usize = 4;
+const KEYS_PER_REPORT: usize = 6;
 
 bind_interrupts!(struct Irqs {
     USBCTRL_IRQ => InterruptHandler<USB>;

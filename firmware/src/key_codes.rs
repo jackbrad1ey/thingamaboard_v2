@@ -99,15 +99,15 @@ pub enum KeyCode {
     RightParen = 0xB7,
 
     // Modifier keys
-    Fn = 0xF0,
+    // Fn = 0xF0,
     LeftShift = 0xF1,
-    LeftCtrl = 0xF2,
-    LeftAlt = 0xF3,
-    LeftCmd = 0xF4,
-    RightCmd = 0xF5,
+    LeftCtrl = 0xF0,
+    LeftAlt = 0xF2,
+    LeftCmd = 0xF3,
+    RightCmd = 0xF7,
     RightAlt = 0xF6,
-    RightCtrl = 0xF7,
-    RightShift = 0xF8,
+    RightCtrl = 0xF4,
+    RightShift = 0xF5,
 
     // Layer change keys
     LayerShift1 = 0xA0,
