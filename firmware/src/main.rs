@@ -6,6 +6,8 @@ mod key_layers;
 mod key_scan;
 
 use defmt::*;
+use key_codes::KeyCode;
+use core::iter::Empty;
 use core::sync::atomic::{AtomicBool, Ordering};
 
 use embassy_executor::Spawner;
@@ -86,15 +88,43 @@ async fn main(_spawner: Spawner) {
 
     let (reader, mut writer) = hid.split();
 
-    let mut keycode = 1;
+    let mut modifier_byte = 0;
+    let mut keycodes: [u8; KEYS_PER_REPORT] = [0; KEYS_PER_REPORT];
+
+    let mut columns: [Output; NUM_COLS] = [
+        Output::new(rp.PIN_29,Level::Low),
+        Output::new(rp.PIN_28,Level::Low),
+        Output::new(rp.PIN_27,Level::Low),
+        Output::new(rp.PIN_26,Level::Low),
+        Output::new(rp.PIN_25,Level::Low),
+        Output::new(rp.PIN_24,Level::Low),
+        Output::new(rp.PIN_23,Level::Low),
+        Output::new(rp.PIN_6,Level::Low),
+        Output::new(rp.PIN_5,Level::Low),
+        Output::new(rp.PIN_4,Level::Low),
+        Output::new(rp.PIN_3,Level::Low),
+        Output::new(rp.PIN_2,Level::Low),
+        Output::new(rp.PIN_1,Level::Low),
+        Output::new(rp.PIN_0,Level::Low)
+    ];
+
+    let mut rows: [Input; NUM_ROWS] = [
+        Input::new(rp.PIN_8, Pull::Down),
+        Input::new(rp.PIN_9, Pull::Down),
+        Input::new(rp.PIN_10, Pull::Down),
+        Input::new(rp.PIN_11, Pull::Down)
+    ];
+
+    
     let main_loop = async {
         loop {
-            _ = Timer::after_secs(2).await;
+            keycodes = [0; KEYS_PER_REPORT];
 
+            key_scan::scan_for_keys(&mut keycodes, &mut modifier_byte, &mut columns, &mut rows).await;
             let report = KeyboardReport {
-                keycodes: [keycode, 0, 0, 0, 0, 0],
+                keycodes: keycodes,
                 leds: 0,
-                modifier: 0,
+                modifier: modifier_byte,
                 reserved: 0,
             };
 
@@ -102,22 +132,6 @@ async fn main(_spawner: Spawner) {
                 Ok(()) => {}
                 Err(e) => warn!("Failed to send report: {:?}", e),
             };
-
-            _ = Timer::after_millis(10).await;
-
-            let report = KeyboardReport {
-                keycodes: [0, 0, 0, 0, 0, 0],
-                leds: 0,
-                modifier: 0,
-                reserved: 0,
-            };
-
-            match writer.write_serialize(&report).await {
-                Ok(()) => {}
-                Err(e) => warn!("Failed to send report: {:?}", e),
-            };
-
-            keycode += 1;
         }
     };
 
