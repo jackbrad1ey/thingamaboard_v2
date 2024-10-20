@@ -52,6 +52,7 @@ pub enum KeyCode {
     Tab = 0x2B,
     Space = 0x2C,
     Minus = 0x2D,
+    Plus = 0x57,
     Equals = 0x2E,
     LeftSquareBracket = 0x2F,
     RightSquareBracket = 0x30,
@@ -63,6 +64,16 @@ pub enum KeyCode {
     Period = 0x37,
     ForwardSlash = 0x38,
     CapsLock = 0x39,
+    Asterisk = 0x55,
+
+    Caret = 0xC3,
+    Percent = 0xC4,
+    Hash = 0xCC,
+    At = 0xCE,
+    Ampersand = 0xC7,
+    Exclamation = 0xCF,
+    Currency = 0xB4,
+
 
     // Function keys
     F1 = 0x3A,
@@ -97,6 +108,8 @@ pub enum KeyCode {
     // Keypad keys
     LeftParen = 0xB6,
     RightParen = 0xB7,
+    LeftCurlyBracket = 0xB8,
+    RightCurlyBracket = 0xB9,
 
     // Modifier keys
     // Fn = 0xF0,
@@ -108,6 +121,7 @@ pub enum KeyCode {
     RightAlt = 0xF6,
     RightCtrl = 0xF4,
     RightShift = 0xF5,
+    LeftMeta = 0xF8,
 
     // Layer change keys
     LayerShift1 = 0xA0,

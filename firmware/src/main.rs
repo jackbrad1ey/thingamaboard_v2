@@ -7,6 +7,7 @@ mod key_scan;
 
 use defmt::*;
 use key_codes::KeyCode;
+use core::borrow::BorrowMut;
 use core::iter::Empty;
 use core::sync::atomic::{AtomicBool, Ordering};
 
@@ -115,10 +116,23 @@ async fn main(_spawner: Spawner) {
         Input::new(rp.PIN_11, Pull::Down)
     ];
 
+    for i in 0..NUM_ROWS {
+        rows[i].set_schmitt(true);
+    }
+
+
+    let mut prev_report = KeyboardReport {
+        keycodes: keycodes,
+        leds: 0,
+        modifier: 0,
+        reserved: 0
+    };
+
     
     let main_loop = async {
         loop {
             keycodes = [0; KEYS_PER_REPORT];
+            modifier_byte = 0;
 
             key_scan::scan_for_keys(&mut keycodes, &mut modifier_byte, &mut columns, &mut rows).await;
             let report = KeyboardReport {
@@ -128,10 +142,16 @@ async fn main(_spawner: Spawner) {
                 reserved: 0,
             };
 
-            match writer.write_serialize(&report).await {
-                Ok(()) => {}
-                Err(e) => warn!("Failed to send report: {:?}", e),
-            };
+            if report != prev_report {
+                match writer.write_serialize(&report).await {
+                    Ok(()) => {}
+                    Err(e) => warn!("Failed to send report: {:?}", e),
+                };
+
+                prev_report = report;
+            }
+
+            Timer::after_micros(1000).await;
         }
     };
 
