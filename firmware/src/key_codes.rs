@@ -129,5 +129,7 @@ pub enum KeyCode {
     LayerShift3 = 0xA2,
     LayerShift4 = 0xA3,
     LayerShift5 = 0xA4,
-    LayerShift6 = 0xA5
+    LayerShift6 = 0xA5,
+
+    LeftWin = 0xE3
 }
