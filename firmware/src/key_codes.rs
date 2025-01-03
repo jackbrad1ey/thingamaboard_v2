@@ -88,6 +88,7 @@ pub enum KeyCode {
     F10 = 0x43,
     F11 = 0x44,
     F12 = 0x45,
+    PrintScreen = 0x46,
 
     // Navigation keys
     Right = 0x4F,
@@ -116,7 +117,7 @@ pub enum KeyCode {
     LeftShift = 0xF1,
     LeftCtrl = 0xF0,
     LeftAlt = 0xF2,
-    LeftCmd = 0xF3,
+    LeftWin = 0xF3,
     RightCmd = 0xF7,
     RightAlt = 0xF6,
     RightCtrl = 0xF4,
@@ -129,7 +130,5 @@ pub enum KeyCode {
     LayerShift3 = 0xA2,
     LayerShift4 = 0xA3,
     LayerShift5 = 0xA4,
-    LayerShift6 = 0xA5,
-
-    LeftWin = 0xE3
+    LayerShift6 = 0xA5
 }

@@ -42,7 +42,7 @@ pub async fn scan_for_keys(keys: &mut [u8; KEYS_PER_REPORT], modifier_byte: &mut
                 
                 if (keycode as u8) & 0xF0 == 0xF0 {  // modifier key
                     *modifier_byte |= 1 << ((keycode as u8) ^ 0xF0)
-                } else if num_keys < KEYS_PER_REPORT && !(keycode as u8 - 0xA0 < 16){
+                } else if num_keys < KEYS_PER_REPORT && !(keycode as u8 - 0xA0 < 16) {
                     keys[num_keys] = keycode as u8;
                     num_keys += 1;
                 }
